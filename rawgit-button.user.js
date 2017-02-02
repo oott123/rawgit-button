@@ -2,11 +2,12 @@
 // @name        RawGit Button for Github.com
 // @namespace   oott123_raw_git_button_for_github
 // @include     https://github.com/*
-// @version     2
+// @version     3
 // @grant       none
 // ==/UserScript==
 
 document.addEventListener('pjax:complete', rawgitButton);
+rawgitButton();
 
 function rawgitButton() {
     var rawDom = document.querySelector('#raw-url');
